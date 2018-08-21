@@ -1,0 +1,54 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Lato:300,700')
+$karla: 'Karla', sans-serif
+$lato: 'Lato', sans-serif
+
+$heading: $karla
+$paragraph: $lato
+
+// Color
+$white: #FFFFFF
+$black: #2D4961
+$red: #FF385B
+$blue: #0093FF
+$yellow: #FFB61E
+$green: #03E071
+
+$primary: $red
+$light: $white
+$dark: $black
+$dark-primary: #D33636
+$light-primary: #F55555
+
+// Utilities
+$transition: .3s ease-in-out
+
+// Main Styles + Reset
+body, html
+    padding: 0
+    margin: 0
+    background-color: $white
+    font-family: $paragraph !important
+    color: $black !important
+
+h1, h2, h3, h4, h5, h6
+    font-family: $heading !important
+    font-weight: 700 !important
+
+a
+    text-decoration: none !important
+    color: $blue
+    font-family: $lato
+    font-weight: 600
+    transition: $transition
+
+    &:hover
+        color: $dark !important
+        text-decoration: none !important
+
+#main
+    padding: 0
+    margin: 0
+
+// Imports
+@import 'dashboard.sass'
