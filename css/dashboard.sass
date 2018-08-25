@@ -12,6 +12,9 @@
             margin: 15px auto
             width: 15%
 
+            @media(max-width: 600px)
+                width: 50%
+
         h1
             margin-bottom: -3px
 
@@ -29,12 +32,12 @@
             border-radius: 25px
             z-index: 10
             padding: 20px
-            //filter: grayscale(100%)
-            opacity: .6
+            
+            @media(min-width: 900px)
+                opacity: .6
 
             &:hover
                 z-index: 100
-                filter: grayscale(0%)
                 opacity: 1
 
                 img

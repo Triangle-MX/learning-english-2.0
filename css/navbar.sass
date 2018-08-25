@@ -1,0 +1,44 @@
+#navbar
+    background-color: $primary
+    color: $white
+    width: 100%
+    padding: 20px 20px
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1000
+
+    .row
+        display: flex
+        align-items: center
+
+    .no-gutters
+        margin-right: 0
+        margin-left: 0
+
+        > .col,
+        > [class*="col-"]
+        padding-right: 0
+        padding-left: 0
+
+    .nb-logo-section
+        svg
+            height: 30px
+            transition: $transition
+            cursor: pointer
+
+            .a,.b
+                transition: $transition
+
+            &:hover
+                .a
+                    fill: $red
+
+                .b
+                    fill: $white
+
+    .nb-menu-section
+        text-align: right
+
+        i
+            cursor: pointer
